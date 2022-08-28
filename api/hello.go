@@ -4,8 +4,8 @@ import (
 	"net/http"
 )
 
-func HelloWorld(conf Config) http.HandlerFunc {
+func helloWorld(conf Config) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
-		w.Write([]byte("🛸 Hello from Server"))
+		w.Write([]byte("🛸 Hello, world! -- From Server"))
 	}
 }
